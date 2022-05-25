@@ -21,6 +21,7 @@ for (const key in user) {
 // }
 
 const arr = ['b', 'a', 'c'];
+Array.prototype.someMethod = function () { };
 
 console.dir(arr);
 
@@ -37,3 +38,28 @@ const str = 'string';
 for (const key in str) {
     console.log(str[key]);
 }
+
+const salaries = {
+    John: 500,
+    Ivan: 1000,
+    Ann: 5000,
+    sayHello: function () {
+        console.log('Hillo');
+    },
+};
+
+salaries[Symbol.iterator] = function () {
+    return {
+        current: this.John,
+        last: this.Ann,
+        next() {
+            if (this.current < this.last) {
+                this.current = this.current + 500;
+                return { done: false, value: this.current };
+            } else {
+                return { done: true };
+            }
+            // {done: true, value: 123}
+        }
+    };
+};
