@@ -22,6 +22,10 @@ for (const key in arr) {
     console.log(arr[key]);
 }
 
+for (const key of arr) {
+    console.log(key);
+}
+
 const str = 'string';
 
 for (const key in str) {
