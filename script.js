@@ -21,3 +21,9 @@ const arr = ['b', 'a', 'c'];
 for (const key in arr) {
     console.log(arr[key]);
 }
+
+const str = 'string';
+
+for (const key in str) {
+    console.log(str[key]);
+}
