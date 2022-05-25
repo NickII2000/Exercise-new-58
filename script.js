@@ -63,3 +63,7 @@ salaries[Symbol.iterator] = function () {
         }
     };
 };
+
+for (const res of salaries) {
+    console.log(res);
+}
