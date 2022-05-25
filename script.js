@@ -16,7 +16,13 @@ for (const key in user) {
     console.log(user[key]);
 }
 
+// for (const key of user) {
+//     console.log(key);
+// }
+
 const arr = ['b', 'a', 'c'];
+
+console.dir(arr);
 
 for (const key in arr) {
     console.log(arr[key]);
