@@ -68,6 +68,7 @@ const iterator = salaries[Symbol.iterator]();
 console.log(iterator.next());
 console.log(iterator.next());
 console.log(iterator.next());
+console.log(iterator.next());
 
 // for (const res of salaries) {
 //     console.log(res);
