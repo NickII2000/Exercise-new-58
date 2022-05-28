@@ -42,7 +42,7 @@ for (const key in str) {
 const salaries = {
     John: 500,
     Ivan: 1000,
-    Ann: 5000,
+    Ann: 2500,
     sayHello: function () {
         console.log('Hillo');
     },
@@ -68,7 +68,7 @@ const iterator = salaries[Symbol.iterator]();
 console.log(iterator.next());
 console.log(iterator.next());
 console.log(iterator.next());
-// console.log(iterator.next());
+console.log(iterator.next());
 
 
 // for (const res of salaries) {
