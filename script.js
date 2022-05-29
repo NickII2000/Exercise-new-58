@@ -69,7 +69,7 @@ console.log(iterator.next());
 console.log(iterator.next());
 console.log(iterator.next());
 console.log(iterator.next());
-// console.log(iterator.next());WQ!wq1
+console.log(iterator.next());
 // console.log(iterator.next());
 
 // for (const res of salaries) {
